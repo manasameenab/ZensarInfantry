@@ -26,7 +26,7 @@ public void setEmail(String email) {
 public String getAdddress() {
 	return adddress;
 }
-public void setAdddress(String adddress) {
+public void setAddress(String adddress) {
 	this.adddress = adddress;
 }
 

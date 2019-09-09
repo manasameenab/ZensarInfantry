@@ -33,9 +33,9 @@ public class GlobalServlet extends HttpServlet {
 		ac.setName(name);
 		ac.setPass(pass);
 		ac.setEmail(email);
-		ac.setAdddress(address);
+		ac.setAddress(address);
 		AmazonServiceInterface ae=AmazonService.createServiceObject();
-		int i=ae.createProfile("ac");
+		int i=ae.createProfile(ac);
 		if(i>0) {
 			out.println("profile created");
 		}

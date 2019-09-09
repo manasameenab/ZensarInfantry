@@ -19,4 +19,14 @@
     <servlet-name>GlobalServlet</servlet-name>
     <url-pattern>/GlobalServlet</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>LogInServlet</display-name>
+    <servlet-name>LogInServlet</servlet-name>
+    <servlet-class>com.amazon1.controller.LogInServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LogInServlet</servlet-name>
+    <url-pattern>/LogInServlet</url-pattern>
+  </servlet-mapping>
 </web-app>

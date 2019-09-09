@@ -2,6 +2,7 @@ package com.amazon1.service;
 
 import com.amazon1.dao.AmazonDao;
 import com.amazon1.dao.AmazonDaoInterface;
+import com.amazon1.entity.Amazon1Customer;
 
 public class AmazonService implements AmazonServiceInterface{
 
@@ -11,7 +12,7 @@ public class AmazonService implements AmazonServiceInterface{
 	}
 
 	@Override
-	public int createProfile(String ac) {
+	public int createProfile(Amazon1Customer ac) {
 		AmazonDaoInterface ad=AmazonDao.createDaoObject();
 		return ad.createProfileDao(ac) ;
 	}
